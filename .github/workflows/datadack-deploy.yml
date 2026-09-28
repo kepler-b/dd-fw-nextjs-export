@@ -1,6 +1,6 @@
 # Managed by DataDack Cloud. Build logic lives centrally, so platform
 # updates do not require changes to this repository.
-# datadack-workflow-version: 12
+# datadack-workflow-version: 13
 name: DataDack Deploy
 
 on:
@@ -21,3 +21,4 @@ jobs:
     uses: DataDack/workflows/.github/workflows/build.yml@main
     with:
       project_id: ${{ vars.DATADACK_PROJECT_ID }}
+      build_type: managed_apps
